@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Cinema_2025.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>CINELUX</title>
+    <link rel="stylesheet" href="home.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    <style>
+        .signup-button {
+    background-color: red;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right:7px;
+}
+
+    .signup-button:hover {
+        background-color: darkred;
+    }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <table>
+            <tr>
+                <td style="background-color: #000000; padding: 20px;">
+                    <div class="three-column-layout">
+                        <!-- Left: Image -->
+                        <div class="left-section">
+                            <asp:ImageMap ID="ImageMap1" runat="server" Height="150px"
+                                ImageUrl="~/Images/Logos/ChatGPT Image Jul 26, 2025, 05_00_03 PM.png" />
+                        </div>
+
+                        <!-- Center: Search box and button -->
+                        <div class="center-section">
+                            <asp:TextBox ID="GlobalSearchtxt" runat="server" CssClass="grey-textbox" Placeholder="Search..."></asp:TextBox>
+                            <asp:Button ID="GlobalSearchBtn" runat="server" Text="Search" CssClass="red-button" OnClick="GlobalSearchBtn_Click" />
+                        </div>
+
+                        <!-- Right: Sign Up and Admin Sign In -->
+                        <div class="right-section">
+                            <!-- Sign Up Button (on top) -->
+                            <asp:Button ID="SignUpBtn" runat="server" Text="Sign Up" CssClass="signup-button" PostBackUrl="~/SignUp.aspx" />
+
+                            <!-- Admin Sign In Button -->
+                            <asp:Button ID="AdminSignInBtn" runat="server" Text="Admin Sign In" CssClass="admin-button" PostBackUrl="~/Login.aspx" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="nav-links">
+                    <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    <asp:HyperLink ID="Cinemas" runat="server" NavigateUrl="~/Cinemas.aspx">Cinemas</asp:HyperLink>
+                    <asp:HyperLink ID="Movies" runat="server" NavigateUrl="~/Movies.aspx">Movies</asp:HyperLink>
+                    <asp:HyperLink ID="AboutUs" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
+                    <asp:HyperLink ID="ContactUs" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: black;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                </td>
+            </tr>
+
+            <!-- Footer Row -->
+            <tr>
+                <td style="background-color: #111; color: #ccc; text-align: center; padding: 15px 0; font-size: 14px;">
+                    &copy; 2025 CINELUX. All rights reserved. | 
+                    <a href="AboutUs.aspx" style="color: #f44336;">About Us</a> | 
+                    <a href="ContactUs.aspx" style="color: #f44336;">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+

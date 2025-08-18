@@ -1,0 +1,117 @@
+﻿body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.details-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Poster */
+.poster-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.poster {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Text box */
+.details-text {
+    background-color: #1a1a1a;
+    border-left: 5px solid #ff0000;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+    .details-text h2 {
+        color: #ff0000;
+        font-size: 28px;
+        border-bottom: 2px solid #ff0000;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .details-text p {
+        margin: 10px 0;
+        line-height: 1.6;
+        font-size: 15px;
+    }
+
+/* Trailer */
+.trailer-section {
+    margin-top: 30px;
+}
+
+    .trailer-section h3 {
+        color: #ff0000;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+/* Booking */
+.booking-section {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 25px;
+}
+
+.dropdown,
+.seat-list {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+    /* Checkbox */
+    .seat-list input[type="checkbox"] {
+        margin-right: 5px;
+        accent-color: red;
+    }
+
+    .seat-list label {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+/* Button */
+.book-now-btn {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .book-now-btn:hover {
+        background-color: #cc0000;
+    }
+
+.booking-status {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0f0;
+}

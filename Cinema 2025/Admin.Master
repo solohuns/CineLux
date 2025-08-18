@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Cinema_2025.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <link rel="stylesheet" href="home.css" />
+    <style>
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .user-name {
+            text-align: right;
+        } 
+        .user-name {
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="width:100%;">
+    <tr>
+        <td style="background-color: #000000">
+            <a href="home.aspx">
+            <asp:ImageMap ID="ImageMap1" runat="server" Height="150px" ImageUrl="~/Images/Logos/ChatGPT Image Jul 26, 2025, 05_05_04 PM.png" style="text-align: left">
+            </asp:ImageMap>
+            </a>
+            <asp:Label ID="lblUserName" runat="server" CssClass="user-name"></asp:Label>
+        </td>
+                </tr>
+            <tr>
+                <td class="nav-links">
+    <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/ViewAll.aspx">ViewAll</asp:HyperLink>
+    <asp:HyperLink ID="update" runat="server" NavigateUrl="~/Update.aspx">Update</asp:HyperLink>
+    <asp:HyperLink ID="Insert" runat="server" NavigateUrl="~/Insert.aspx">Insert</asp:HyperLink>
+    <asp:HyperLink ID="Delete" runat="server" NavigateUrl="~/Delete.aspx">Delete</asp:HyperLink>
+</td>
+
+            </tr>
+            <tr>
+                <td style="background-color: black;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                </td>
+            </tr>
+        </table>
+            </div>
+    </form>
+</body>
+</html>
