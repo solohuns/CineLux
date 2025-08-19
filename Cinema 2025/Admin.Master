@@ -33,7 +33,7 @@
             <table style="width:100%;">
     <tr>
         <td style="background-color: #000000">
-            <a href="home.aspx">
+            <a href="Index.aspx">
             <asp:ImageMap ID="ImageMap1" runat="server" Height="150px" ImageUrl="~/Images/Logos/ChatGPT Image Jul 26, 2025, 05_05_04 PM.png" style="text-align: left">
             </asp:ImageMap>
             </a>

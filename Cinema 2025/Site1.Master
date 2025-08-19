@@ -55,7 +55,7 @@
             </tr>
             <tr>
                 <td class="nav-links">
-                    <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/Index.aspx">Home</asp:HyperLink>
                     <asp:HyperLink ID="Cinemas" runat="server" NavigateUrl="~/Cinemas.aspx">Cinemas</asp:HyperLink>
                     <asp:HyperLink ID="Movies" runat="server" NavigateUrl="~/Movies.aspx">Movies</asp:HyperLink>
                     <asp:HyperLink ID="AboutUs" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>

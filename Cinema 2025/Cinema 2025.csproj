@@ -82,7 +82,7 @@
     <Content Include="Details.aspx" />
     <Content Include="Details.css" />
     <Content Include="Genre.aspx" />
-    <Content Include="Home.aspx" />
+    <Content Include="Index.aspx" />
     <Content Include="home.css" />
     <Content Include="Images\CineLuxBanners\CREED III.jpg" />
     <Content Include="Images\CineLuxBanners\INCEPTION Banner.jpg" />
@@ -246,12 +246,12 @@
     <Compile Include="Genre.aspx.designer.cs">
       <DependentUpon>Genre.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Insert.aspx.cs">
       <DependentUpon>Insert.aspx</DependentUpon>
